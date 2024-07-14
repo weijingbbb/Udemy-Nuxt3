@@ -7,10 +7,10 @@
 
 <script setup>
 const id = ref(1)
-const { data: products, refresh } = await useFetch(() =>`https://fakestoreapi.com/products/${id.value}`)
+const { data: products, refresh } = await useFetch(() =>`https://fakestoreapi.com/products/1`)
 console.log('products: ', products.value);
 const fetchProduct = async () => {
-    ++id.value
+    id.value = id.value + 1
     await refresh()
     console.log('refresh: ', products.value);
 }
