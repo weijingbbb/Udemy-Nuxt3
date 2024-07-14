@@ -4,5 +4,24 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   css: ['~/assets/scoped.css', 'animate.css'],
-  modules: ['@nuxtjs/tailwindcss']
+  modules: ['@nuxtjs/tailwindcss'],
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=2',
+      title: '章节3的demo合集',
+      meta: [
+        {
+          name: 'description',
+          content: '有路由、校验器、layout这些知识呀'
+        }
+      ],
+      link: [
+        {
+          rel: 'shortlink',
+          href: '~/assets/base.css'
+        }
+      ]
+    }
+  }
 })
