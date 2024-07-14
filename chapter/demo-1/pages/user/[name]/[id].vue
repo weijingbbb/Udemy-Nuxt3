@@ -6,6 +6,11 @@
     </div>
 </template>
 <script setup>
+definePageMeta({
+    middleware: [
+        'fn',
+    ]
+})
 const route = useRoute()
 const name = route.params.name
 const id = route.params.id
