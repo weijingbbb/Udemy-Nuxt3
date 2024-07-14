@@ -1,7 +1,10 @@
 <template>
-    <div class="animate__animated animate__bounce" style="font-size: 38px; color: red;">这个是about页，使用了自定义layout。</div>
-    <button @click="changLayout">切换布局</button>
-    <div>测试about的局部样式</div>
+    <div>
+        <div class="animate__animated animate__bounce" style="font-size: 38px; color: red;">这个是about页，使用了自定义layout。
+        </div>
+        <button @click="changLayout">切换布局</button>
+        <div>测试about的局部样式</div>
+    </div>
 </template>
 
 <script setup>
@@ -20,6 +23,6 @@ const changLayout = () => {
 }
 </script>
 
-<style scoped >
+<style scoped>
 @import '~/assets/scoped.css';
 </style>

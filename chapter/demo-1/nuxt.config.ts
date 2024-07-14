@@ -22,6 +22,16 @@ export default defineNuxtConfig({
           href: '~/assets/base.css'
         }
       ]
+    },
+    // 布局的过渡效果
+    layoutTransition: {
+      name: 'layout',
+      mode: 'out-in'
+    },
+    // 单页面的过渡效果
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
     }
   }
 })
