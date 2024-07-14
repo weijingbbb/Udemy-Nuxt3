@@ -9,6 +9,7 @@
 definePageMeta({
     middleware: [
         'fn',
+        'bbb'
     ]
 })
 const route = useRoute()
