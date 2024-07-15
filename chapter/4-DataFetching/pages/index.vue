@@ -7,6 +7,9 @@
             <li>
                 <NuxtLink to="/fetching-cache">到fetching-cache页</NuxtLink>
             </li>
+            <li>
+                <NuxtLink to="/currency">到兑换页</NuxtLink>
+            </li>
         </div>
     </div>
 </template>
