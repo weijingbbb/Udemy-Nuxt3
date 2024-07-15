@@ -19,7 +19,7 @@ const { data: posts } = await useFetch('posts', {
     //     ccc: 'ccc',
     //     ddd: 'ddd'
     // }
-    timeout: 5000
+    timeout: 5000,
 })
 console.log('posts---: ', posts.value);
 </script>
