@@ -1,4 +1,4 @@
-export default defineCachedEventHandler(
+export default defineEventHandler(
     (event) => {
         const list = getRouterParams(event, 'list')
 
