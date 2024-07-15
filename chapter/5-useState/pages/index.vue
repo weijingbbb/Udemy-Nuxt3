@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-const counter = useState(() => 1)
+const counter = useState('counter',() => 1)
 const add = () => {
     counter.value = counter.value + 1
 }
