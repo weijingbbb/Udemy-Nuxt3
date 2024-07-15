@@ -22,7 +22,8 @@ const { data: posts, execute } = await useFetch('products/1', {
             ...product,
             title: '转换后的标题呀'
         }
-    }
+    },
+    pick: ['title']
 })
 console.log('posts---: ', posts.value);
 </script>
