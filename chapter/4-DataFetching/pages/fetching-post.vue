@@ -10,7 +10,16 @@ const { data: posts } = await useFetch('posts', {
         title: '哈啰',
         body: '你好呀',
         userID: 99
-    }
+    },
+    params: {
+        aaa: 'aaa',
+        bbb: 'bbb'
+    },
+    // query: {
+    //     ccc: 'ccc',
+    //     ddd: 'ddd'
+    // }
+    timeout: 5000
 })
 console.log('posts---: ', posts.value);
 </script>
