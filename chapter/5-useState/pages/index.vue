@@ -9,6 +9,9 @@
         <div>
             <NuxtLink to="/compose">去compose页</NuxtLink>
         </div>
+        <div>
+            <NuxtLink to="/todo">去todo页</NuxtLink>
+        </div>
     </div>
 </template>
 
