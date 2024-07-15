@@ -1,3 +1,3 @@
 export default defineEventHandler((event) => {
-    console.log('api-log:',getRequestURL(event));
+    console.log('api-log:',getRequestURL(event).href);
 })
